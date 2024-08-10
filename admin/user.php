@@ -33,7 +33,16 @@
                 </td>
             </tr>
         </table>
+
+        <div class="modal">
+            <div class="modal-content">
+                Hello world form bangladesh.
+            </div>
+        </div>
     </section>
+
+
+    <script src="../js/userModal.js"></script>
 </body>
 
 </html>
