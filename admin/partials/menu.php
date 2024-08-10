@@ -20,6 +20,8 @@
         <li class="<?php echo $currentRoute === "/phpLearning/food-order-website/admin/orders.php" ? "menu-selected" : "menu" ?>"><a href="/phpLearning/food-order-website/admin/orders.php">Orders</a></li>
 
         <li class="<?php echo $currentRoute === "/phpLearning/food-order-website/admin/products.php" ? "menu-selected" : "menu" ?>"><a href="/phpLearning/food-order-website/admin/products.php">Products</a></li>
+
+        <li class="<?php echo $currentRoute === "/phpLearning/food-order-website/admin/user.php" ? "menu-selected" : "menu" ?>"><a href="/phpLearning/food-order-website/admin/user.php">Users</a></li>
     </ul>
 </body>
 

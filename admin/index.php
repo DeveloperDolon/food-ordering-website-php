@@ -1,3 +1,8 @@
+
+<?php 
+    include("../config/constants.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,9 +79,17 @@
             $fullName = $_POST["full-name"];
             $username = $_POST["username"];
             $password = $_POST["password"];
-        }
 
-        echo $fullName . " " . $username . " " . $password;
+            // Add user to the database
+            $query = "INSERT INTO tbl_admin (full_name, username, password) VALUES ('$fullName', '$username', '$password')";
+            $result = mysqli_query($conn, $query);
+
+            if ($result) {
+                echo "<script>alert('User added successfully')</script>";
+            } else {
+                echo "<script>alert('Failed to add user')</script>";
+            }
+        }
 
     ?>
 </body>
