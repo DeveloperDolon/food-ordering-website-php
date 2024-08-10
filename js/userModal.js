@@ -3,9 +3,9 @@ const editBtn = document.querySelector('.edit-usr-btn');
 const modal = document.querySelector('.modal');
 
 editBtn.addEventListener('click', (e) => {
-    console.log(e);
+    modal.classList.remove("close");
+    modal.classList.add("open");
 });
-
 
 document.querySelector(".modal-content").addEventListener('click', (e) => {
     e.stopPropagation();
@@ -13,7 +13,6 @@ document.querySelector(".modal-content").addEventListener('click', (e) => {
 
 modal.addEventListener('click', (e) => {
     e.preventDefault();
-    
-
-    
+    modal.classList.remove("open");
+    modal.classList.add("close");
 });

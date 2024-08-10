@@ -34,7 +34,7 @@
             </tr>
         </table>
 
-        <div class="modal">
+        <div class="modal close">
             <div class="modal-content">
                 Hello world form bangladesh.
             </div>
