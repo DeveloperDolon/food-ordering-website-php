@@ -8,9 +8,14 @@
 </head>
 <body>
     <header class="container">
-        <?php 
+        <?php
             include("./partials/menu.php");
         ?>
     </header>
+
+    <main class="container">
+        <h1 class="title">Welcome to the Admin Panel</h1>
+        <p class="description">This is the main dashboard for the admin area.</p>
+    </main>
 </body>
 </html>

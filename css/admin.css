@@ -56,3 +56,12 @@
     text-decoration: none;
     color: #333;
 }
+
+.title {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
+}
