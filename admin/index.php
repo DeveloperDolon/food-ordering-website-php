@@ -33,8 +33,51 @@
                 <p>1234</p>
             </div>
         </section>
+
+
+        <section class="add-user-container">
+
+            <div class="add-user-title">
+                <h2>Add User : </h2>
+            </div>
+            <form action="index.php" method="post">
+                <div>
+                    <label class="input-label" for="full-name">Full Name*</label> 
+                    <br>
+                    <input class="user-input" required type="text" name="full-name" placeholder="Enter full name">
+                </div>
+
+                <div>
+                    <label class="input-label" for="username">Username*</label>
+                    <br>
+                    <input class="user-input" type="text" required name="username" placeholder="Enter username">
+                </div>
+
+                <div>
+                    <label class="input-label" for="password">Password*</label>
+                    <br>
+                    <input class="user-input" required type="password" name="password" placeholder="Enter password">
+                </div>
+                
+                <button type="submit" class="add-user-btn">Add</button>
+            </form>
+        </section>
     </main>
 
     <?php include("./partials/footer.php") ?>
+
+    <?php
+        // $fullName = "";
+        // $username = "";
+        // $password = "";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $fullName = $_POST["full-name"];
+            $username = $_POST["username"];
+            $password = $_POST["password"];
+        }
+
+        echo $fullName . " " . $username . " " . $password;
+
+    ?>
 </body>
 </html>
