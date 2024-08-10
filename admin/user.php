@@ -14,6 +14,26 @@
         include("./partials/menu.php");
         ?>
     </header>
+
+    <section class="container">
+        <h1 style="padding: 20px 0px;">User management</h1>
+
+        <table class="table-of-users">
+            <tr>
+                <th>Full name</th>
+                <th>Username</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Dolon Chandra Roy</td>
+                <td>dolonroy</td>
+                <td class="action-row">
+                    <button class="delete-user-btn">Delete</button>
+                    <button class="edit-usr-btn">Edit</button>
+                </td>
+            </tr>
+        </table>
+    </section>
 </body>
 
 </html>
