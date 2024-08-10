@@ -83,3 +83,50 @@
 .footer-content a {
     text-decoration: none;
 }
+
+.stat-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Corrected syntax */
+    gap: 30px;
+    margin: 50px 0px;
+}
+
+.stat {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(195, 195, 195);
+}
+
+.stat h2 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 10px 0;
+    color: white;
+}
+
+.stat p {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+    color: white;
+}
+
+.admin-panel-wrapper {
+    margin-top: 50px;
+}
+
+.stat-customer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/custyo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.stat-revenue {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/taka.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.stat-products {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../images/chingri.jpg") no-repeat center center;
+    background-size: cover;
+}
