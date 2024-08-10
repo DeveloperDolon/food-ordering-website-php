@@ -7,8 +7,10 @@
     <title>Home - Admin Panel</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Admin Panel</h1>
+    <header class="container">
+        <?php 
+            include("./partials/menu.php");
+        ?>
     </header>
 </body>
 </html>
